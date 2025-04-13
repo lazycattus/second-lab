@@ -1,0 +1,136 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+  }
+  
+  body {
+    background-color: #ffe4ec;
+    color: #b30059;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: #fddde6;
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  nav ul li {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #b30059;
+  }
+
+/* About Banner */
+.about-banner {
+    background-color: #c7006d;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-style: italic;
+  }
+  
+  .about-banner h2 {
+    font-size: 28px;
+    line-height: 1.5
+
+  }
+  
+  /* About Section */
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    gap: 60px;
+    flex-wrap: wrap;
+    background-color: #fff0f5;
+  }
+  
+  .about-text {
+    flex: 1;
+    max-width: 500px;
+    color: #660033
+    font-style: italic;
+  }
+  
+  .about-text h3 {
+    font-size: 22px;
+    color: #c7006d;
+    font-family: cursive;
+    margin-bottom: 20px;
+  }
+  
+  .about-text span {
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .about-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .about-button {
+    display: inline-block;
+    background-color: #c7006d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    font-style: italic;
+  }
+
+  .button-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .cat-icon {
+    width: 100px;
+  }
+  
+  /* About Image */
+  .about-image img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* Pusheen Parade */
+.pusheen-parade {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+  background-color: #f197a3;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.pusheen-parade img {
+  width: 80px;
+  transition: transform 0.3s ease;
+}
+
+.pusheen-parade img:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,173 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+  }
+
+  body {
+    background-color: #ffe4ec;
+    color: #b30059;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: #fddde6;
+    padding: 20px 0;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  nav ul li {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #b30059;
+  }
+  
+  /* Body background */
+body {
+  background: linear-gradient(to bottom, #f6bda9, #e3c0c0);
+  font-family: 'Georgia', serif;
+  color: #604f6f;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+.edu-nav {
+  background-color: #f197a3;
+  padding: 20px 0;
+}
+
+.edu-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.edu-nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.edu-nav ul li a:hover {
+  color: #eb6171;
+}
+
+/* Header Banner */
+.edu-header {
+  background-color: #ef738c;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-style: italic;
+}
+
+.edu-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+
+/* Education Section */
+.edu-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.edu-table-wrapper {
+  max-width: 700px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  color: #604f6f;
+}
+
+th, td {
+  border: 1px solid #f6bda9;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #e3c0c0;
+  color: #fff;
+}
+
+.cat-left, .cat-right {
+  position: absolute;
+  width: 100px;
+  top: 770px;
+}
+
+.cat-left {
+  left: 20px;
+}
+
+.cat-right {
+  right: 20px;
+}
+
+.home-link {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  color: #a80054;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+
+.home-link span {
+  display: block;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+
+
+/* Pusheen Parade */
+.pusheen-parade {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+  background-color: #f197a3;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.pusheen-parade img {
+  width: 80px;
+  transition: transform 0.3s ease;
+}
+
+.pusheen-parade img:hover {
+  transform: scale(1.2);
+}
+

@@ -1,0 +1,148 @@
+
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      background-color: #ffe4ec;
+      color: #b30059;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #fddde6;
+      padding: 20px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+    }
+
+    nav ul li {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #b30059;
+    }
+
+    /* Social Activity Header */
+    .sactivity-header {
+      background-color: #ef8e73;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      font-style: italic;
+    }
+
+    .sactivity-header h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+   /* Social Activity Gallery */
+.sactivity-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 40px;
+  background: linear-gradient(to bottom, #f6bda9, #f197a3);
+}
+
+/* Each card */
+.sactivity-frame {
+  background-color: #fff;
+  border: 4px solid #e3c0c0;
+  border-radius: 20px;
+  width: 260px;
+  height: 500px; 
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+/* Normal single image */
+.sactivity-frame img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+/* Scrollable image container (for multiple images in a single card) */
+.image-scroll {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.image-scroll img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Caption */
+.sactivity-frame p {
+  color: #604f6f;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.portrait-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portrait-img {
+  flex-grow: 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.sactivity-frame:hover {
+  transform: scale(1.05); /* zoom in slightly */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* optional: glow effect */
+}
+    /* Pusheen Parade */
+    .pusheen-parade {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px auto;
+      background-color: #f197a3;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+    .pusheen-parade img {
+      width: 80px;
+      transition: transform 0.3s ease;
+    }
+
+    .pusheen-parade img:hover {
+      transform: scale(1.2);
+    }
