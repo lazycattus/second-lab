@@ -1,78 +1,63 @@
-/* Reset and base styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Georgia', serif;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-  body {
-    background-color: #ffe4ec;
-    color: #b30059;
-  }
-  
-  /* Navbar */
-  nav {
-    background-color: #fddde6;
-    padding: 20px 0;
-  }
-
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-  }
-  
-  nav ul li {
-    font-weight: bold;
-    font-size: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #b30059;
-  }
-  
-  /* Body background */
 body {
-  background: linear-gradient(to bottom, #f6bda9, #e3c0c0);
-  font-family: 'Georgia', serif;
-  color: #604f6f;
-  margin: 0;
-  padding: 0;
+  background-color: #e6f2ff;
+  color: #003366;
 }
 
-/* Navigation */
-.edu-nav {
-  background-color: #f197a3;
+/* Navbar */
+.navbar {
+  background-color: #cce6ff;
   padding: 20px 0;
+  box-shadow: 0 2px 6px rgba(210, 203, 203, 0.05);
 }
 
-.edu-nav ul {
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
   display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 50px;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.edu-nav ul li a {
-  color: white;
+/* Logo styling */
+.logo {
+  font-size: 24px;
   font-weight: bold;
-  text-decoration: none;
-  font-size: 16px;
+  color: #003366;
+  flex-shrink: 0;
 }
 
-.edu-nav ul li a:hover {
-  color: #eb6171;
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #032d57;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #2766a5;
 }
 
 /* Header Banner */
 .edu-header {
-  background-color: #ef738c;
+  background-color: #0059b3;
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -80,10 +65,9 @@ body {
 }
 
 .edu-header h2 {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
-
 
 /* Education Section */
 .edu-section {
@@ -92,64 +76,49 @@ body {
 }
 
 .edu-table-wrapper {
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
   background-color: #fff;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   font-size: 16px;
-  color: #604f6f;
+  color: #003366;
 }
 
 th, td {
-  border: 1px solid #f6bda9;
+  border: 1px solid #b3d9ff;
   padding: 12px;
   text-align: center;
 }
 
 th {
-  background-color: #e3c0c0;
-  color: #fff;
+  background-color: #99ccff;
+  color: #ffffff;
 }
 
-.cat-left, .cat-right {
-  position: absolute;
-  width: 100px;
-  top: 770px;
-}
-
+/* Home icon */
 .cat-left {
-  left: 20px;
+  width: 90px;
+  margin-top: 30px;
+  transition: transform 0.3s ease;
 }
 
-.cat-right {
-  right: 20px;
+.cat-left:hover {
+  transform: scale(1.1);
 }
 
 .home-link {
-  text-decoration: none;
   text-align: center;
-  display: inline-block;
+  margin-top: 20px;
   font-size: 14px;
-  color: #a80054;
-  position: absolute;
-  bottom: 30px;
-  left: 20px;
+  color: #004080;
 }
-
-.home-link span {
-  display: block;
-  margin-top: 4px;
-  font-style: italic;
-}
-
-
 
 /* Pusheen Parade */
 .pusheen-parade {
@@ -157,7 +126,7 @@ th {
   justify-content: center;
   gap: 20px;
   margin: 40px auto;
-  background-color: #f197a3;
+  background-color: #d6eaff;
   padding: 20px;
   border-radius: 20px;
 }
@@ -168,6 +137,5 @@ th {
 }
 
 .pusheen-parade img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
-

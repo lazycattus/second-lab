@@ -1,83 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Georgia', serif;
-    }
+body {
+  background-color: #e6f2ff;
+  color: #003366;
+}
 
-    body {
-      background-color: #ffe4ec;
-      color: #b30059;
-    }
+/* Centered Navigation */
+.navbar {
+  background-color: #cce6ff;
+  padding: 20px 0;
+  box-shadow: 0 2px 6px rgba(210, 203, 203, 0.05);
+}
 
-    /* Navbar */
-    nav {
-      background-color: #fddde6;
-      padding: 20px 0;
-    }
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 60px;
-    }
+/* Logo styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #003366;
+  flex-shrink: 0;
+}
 
-    nav ul li {
-      font-weight: bold;
-      font-size: 20px;
-    }
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-grow: 1;
+}
 
-    nav ul li a {
-      text-decoration: none;
-      color: #b30059;
-    }
+.nav-links li a {
+  text-decoration: none;
+  color: #032d57;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
 
-    /* Social Activity Header */
-    .sactivity-header {
-      background-color: #ef8e73;
-      color: #fff;
-      text-align: center;
-      padding: 40px 20px;
-      font-style: italic;
-    }
+.nav-links li a:hover {
+  color: #2766a5;
+}
 
-    .sactivity-header h2 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
+/* Header */
+.sactivity-header {
+  background-color: #0059b3;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-style: italic;
+}
 
-   /* Social Activity Gallery */
+.sactivity-header h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* Gallery Layout */
 .sactivity-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   padding: 60px 40px;
-  background: linear-gradient(to bottom, #f6bda9, #f197a3);
+  background: linear-gradient(to bottom, #dbefff, #a7ccf2);
 }
 
-/* Each card */
+/* Cards */
 .sactivity-frame {
   background-color: #fff;
-  border: 4px solid #e3c0c0;
+  border: 3px solid #b3d9ff;
   border-radius: 20px;
   width: 260px;
-  height: 500px; 
+  height: 500px;
   padding: 15px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   overflow: hidden;
 }
 
-/* Normal single image */
+.sactivity-frame:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
 .sactivity-frame img {
   width: 100%;
   height: 180px;
@@ -86,7 +109,7 @@
   margin-bottom: 10px;
 }
 
-/* Scrollable image container (for multiple images in a single card) */
+/* Scrollable image section */
 .image-scroll {
   flex: 1;
   overflow-y: auto;
@@ -101,13 +124,14 @@
   margin-bottom: 10px;
 }
 
-/* Caption */
+/* Captions */
 .sactivity-frame p {
-  color: #604f6f;
+  color: #003366;
   font-style: italic;
   font-size: 15px;
 }
 
+/* Vertical image helper */
 .portrait-card {
   display: flex;
   flex-direction: column;
@@ -122,27 +146,22 @@
   margin-bottom: 10px;
 }
 
-.sactivity-frame:hover {
-  transform: scale(1.05); /* zoom in slightly */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* optional: glow effect */
+/* Pusheen Parade */
+.pusheen-parade {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+  background-color: #d6eaff;
+  padding: 20px;
+  border-radius: 20px;
 }
-    /* Pusheen Parade */
-    .pusheen-parade {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin: 40px auto;
-      background-color: #f197a3;
-      padding: 20px;
-      border-radius: 20px;
-    }
 
-    .pusheen-parade img {
-      width: 80px;
-      transition: transform 0.3s ease;
-    }
+.pusheen-parade img {
+  width: 80px;
+  transition: transform 0.3s ease;
+}
 
-    .pusheen-parade img:hover {
-      transform: scale(1.2);
-    }
+.pusheen-parade img:hover {
+  transform: scale(1.1);
+}
